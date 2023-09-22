@@ -35,7 +35,7 @@ app.use("/users", require("./routes/users"));
 app.use("/messages", require("./routes/messages"));
 
 // Router endpoints for comments
-app.use("/comments", require("./routes/comments"));
+app.use("/comments", require("./routes/comments")); 
 
 
 
