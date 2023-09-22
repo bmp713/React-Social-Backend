@@ -75,7 +75,7 @@ router.delete("/delete/:id", async (req, res) => {
 //         res.send( post ); 
 //     }catch(err){ 
 //         console.log(err);
-//     }
+//     } 
 // }); 
 // const create = async (data) => {
 //     try{
