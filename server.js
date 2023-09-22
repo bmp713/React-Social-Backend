@@ -27,7 +27,7 @@ const connection = mongoose.connect(
     .catch( (err) => {
         console.error(`Error connecting to the database. ${err}`);
     })
-
+ 
 // Router endpoints for users
 app.use("/users", require("./routes/users"));
 
@@ -36,6 +36,27 @@ app.use("/messages", require("./routes/messages"));
 
 // Router endpoints for comments
 app.use("/comments", require("./routes/comments"));
+
+
+
+
+// react-node-frontend.up.railway.app/profile
+//
+// {
+// "id":"8198717466146221",
+// "date":"1695304420170",
+// "email":"demo@yahoo.com",
+// "first":"Demo",
+// "last":"User",
+// "likes":"5",
+// "liked":",",
+// "message":"2022 Tesla Roadster",
+// "time":"9/21/2023 6:53AM",
+// "userID":"FgMaLrNhX5hbXwaE5U9RYKA0Fc62",
+// "userImg":"https://firebasestorage.googleapis.com/v0/b/context-187ec.appspot.com/…",
+// "imageURL":"https://firebasestorage.googleapis.com/v0/b/context-187ec.appspot.com/…",
+// "edited":"true"
+// }
 
 
 
