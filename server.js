@@ -21,7 +21,7 @@ const connection = mongoose.connect(
     'mongodb+srv://bmp713:%40MongoDB310@cluster0.68vf5.mongodb.net/social/?retryWrites=true&w=majority', 
     { useUnifiedTopology: true, dbName: 'social' }
 )
-    .then( () => {
+    .then( () => {  
         console.log('Connected to the database ');
     })
     .catch( (err) => {
