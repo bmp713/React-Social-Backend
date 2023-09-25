@@ -30,7 +30,7 @@ const connection = mongoose.connect(
  
 // Router endpoints for users
 app.use("/users", require("./routes/users"));
-
+ 
 // Router endpoints for messages 
 app.use("/messages", require("./routes/messages"));
 
