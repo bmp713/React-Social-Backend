@@ -27,7 +27,7 @@ const connection = mongoose.connect(
     .catch( (err) => {
         console.error(`Error connecting to the database. ${err}`);
     })
- 
+  
 // Router endpoints for users
 app.use("/users", require("./routes/users"));
  
