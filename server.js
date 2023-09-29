@@ -27,13 +27,13 @@ const connection = mongoose.connect(
     .catch( (err) => {
         console.error(`Error connecting to the database. ${err}`);
     })
-  
+   
 // Router endpoints for users
 app.use("/users", require("./routes/users"));
  
 // Router endpoints for messages 
 app.use("/messages", require("./routes/messages"));
-
+ 
 // Router endpoints for comments
 app.use("/comments", require("./routes/comments")); 
 
