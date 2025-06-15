@@ -18,7 +18,6 @@ const read = async () => {
     } catch (err) { console.log(err) }
 }
 
-
 router.post("/create", async (req, res) => {
     console.log("/comments/create =>", req);
     try {
@@ -38,6 +37,7 @@ router.post("/create", async (req, res) => {
         console.log(err);
     }
 });
+
 const create = async (data) => {
     try {
         const posts = await Comments.create(data);
@@ -46,7 +46,6 @@ const create = async (data) => {
         console.log(err);
     }
 }
-
 
 router.delete("/delete/:id", async (req, res) => {
     console.log("comments/delete", req.params.id);
@@ -57,7 +56,6 @@ router.delete("/delete/:id", async (req, res) => {
         console.log(err);
     }
 });
-
 
 router.get("/read/:id", async (req, res) => {
     console.log("comments/read", req.params.id);
@@ -79,7 +77,6 @@ const readId = async (id) => {
     }
 }
 
-
 router.post("/update/:id", async (req, res) => {
     try {
         const update = await Comments.findOne({ id: req.params.id });
@@ -100,7 +97,6 @@ router.post("/update/:id", async (req, res) => {
     }
 
 });
-
 
 module.exports = router;
 
